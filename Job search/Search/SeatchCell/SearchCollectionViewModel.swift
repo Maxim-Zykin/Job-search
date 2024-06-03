@@ -14,7 +14,6 @@ protocol SearchCollectionCellViewModelProtocol {
     var address: String { get }
     var company: String { get }
     var experience: String { get }
-    var publishedDate: String { get }
     init(vacancies: Vacancy)
 }
 
@@ -49,10 +48,5 @@ class SearchCollectionCellViewModel: SearchCollectionCellViewModelProtocol {
     var experience: String {
         vacancies.experience.previewText
     }
-    
-    var publishedDate: String {
-        vacancies.publishedDate
-    }
-    
     
 }

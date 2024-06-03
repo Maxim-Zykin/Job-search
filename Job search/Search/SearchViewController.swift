@@ -18,7 +18,6 @@ class SearchViewController: UIViewController {
         didSet {
             viewModel.fetchVacancies {
                 DispatchQueue.main.async {
-                    print("УСПЕХ")
                     self.collectionView.reloadData()
                 }
             }
