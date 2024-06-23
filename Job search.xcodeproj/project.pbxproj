@@ -28,7 +28,9 @@
 		0C1A056E2C08CB9200C46B23 /* ExtensionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A056D2C08CB9200C46B23 /* ExtensionTextField.swift */; };
 		0C1A05702C08D87900C46B23 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A056F2C08D87900C46B23 /* Buttons.swift */; };
 		0C1A05722C0A2DCA00C46B23 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A05712C0A2DCA00C46B23 /* Validator.swift */; };
+		0C407EBA2C11C502006BB971 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C407EB92C11C502006BB971 /* DetailViewController.swift */; };
 		0C9EC5222C0AE86A00685F1C /* LoginConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9EC5212C0AE86A00685F1C /* LoginConfirmationViewController.swift */; };
+		0CA167F22C1C9C9A005312F4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA167F12C1C9C9A005312F4 /* DetailViewModel.swift */; };
 		0CB1B9F32C0CAEF600063C63 /* ModelVacancies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1B9F22C0CAEF600063C63 /* ModelVacancies.swift */; };
 		0CB1B9F62C0CB0E000063C63 /* SearchCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1B9F52C0CB0E000063C63 /* SearchCollectionViewModel.swift */; };
 		0CB1B9FA2C0CB18200063C63 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB1B9F92C0CB18200063C63 /* NetworkManager.swift */; };
@@ -60,7 +62,9 @@
 		0C1A056D2C08CB9200C46B23 /* ExtensionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTextField.swift; sourceTree = "<group>"; };
 		0C1A056F2C08D87900C46B23 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		0C1A05712C0A2DCA00C46B23 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		0C407EB92C11C502006BB971 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0C9EC5212C0AE86A00685F1C /* LoginConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfirmationViewController.swift; sourceTree = "<group>"; };
+		0CA167F12C1C9C9A005312F4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		0CB1B9F22C0CAEF600063C63 /* ModelVacancies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelVacancies.swift; sourceTree = "<group>"; };
 		0CB1B9F52C0CB0E000063C63 /* SearchCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewModel.swift; sourceTree = "<group>"; };
 		0CB1B9F92C0CB18200063C63 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				0C1A05462C0763F300C46B23 /* Login */,
 				0C9EC5202C0AE84400685F1C /* Сonfirmation */,
 				0C1A054B2C0765B400C46B23 /* Search */,
+				0C407EB82C11C4E0006BB971 /* Detail */,
 				0C1A05502C0765F400C46B23 /* Favorites */,
 				0C1A05572C07662C00C46B23 /* Responses */,
 				0C1A055C2C07668F00C46B23 /* Messages */,
@@ -181,6 +186,15 @@
 				0C1A056D2C08CB9200C46B23 /* ExtensionTextField.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		0C407EB82C11C4E0006BB971 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0C407EB92C11C502006BB971 /* DetailViewController.swift */,
+				0CA167F12C1C9C9A005312F4 /* DetailViewModel.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		0C9EC5202C0AE84400685F1C /* Сonfirmation */ = {
@@ -300,6 +314,7 @@
 				0CB1B9FE2C0CBDD000063C63 /* CustomLabel.swift in Sources */,
 				0C1A05562C07661700C46B23 /* FavoritesViewModel.swift in Sources */,
 				0C1A05622C0766B000C46B23 /* MessagesViewModel.swift in Sources */,
+				0CA167F22C1C9C9A005312F4 /* DetailViewModel.swift in Sources */,
 				0CB1B9F62C0CB0E000063C63 /* SearchCollectionViewModel.swift in Sources */,
 				0C1A05602C0766A800C46B23 /* MessagesViewController.swift in Sources */,
 				0C1A05542C07661000C46B23 /* FavoritesViewController.swift in Sources */,
@@ -309,6 +324,7 @@
 				0C1A05592C07663C00C46B23 /* ResponsesViewController.swift in Sources */,
 				0C1A055B2C07664D00C46B23 /* ResponsesViewModel.swift in Sources */,
 				0C1A05692C076C9F00C46B23 /* Resources.swift in Sources */,
+				0C407EBA2C11C502006BB971 /* DetailViewController.swift in Sources */,
 				0C1A054F2C0765D100C46B23 /* SearchViewModel.swift in Sources */,
 				0C1A05652C0766E300C46B23 /* ProfileViewModel.swift in Sources */,
 				0C1A05722C0A2DCA00C46B23 /* Validator.swift in Sources */,

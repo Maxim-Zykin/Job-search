@@ -12,11 +12,12 @@ protocol SearchViewModelProtocol {
     func fetchVacancies(completion: @escaping() -> Void)
     func numberOfRows() -> Int
     func cellViewModel(at indexPath: IndexPath) -> SearchCollectionCellViewModelProtocol
+    func viewModelForSelectedRow(at indexPath: IndexPath) -> DetailViewModelProtocol
 }
 
 class SearchViewModel: SearchViewModelProtocol {
     
-    private let url = "https://run.mocky.io/v3/d67a278f-ddcb-438c-bf56-3194c529b12b"
+    private let url = "https://run.mocky.io/v3/c6a5026f-0c42-451d-ad62-a24c6356b4bc"
     
     var vacancies: [Vacancy] = []
     
@@ -42,5 +43,8 @@ class SearchViewModel: SearchViewModelProtocol {
         return SearchCollectionCellViewModel(vacancies: vacancies)
     }
     
-    
+    func viewModelForSelectedRow(at indexPath: IndexPath) -> any DetailViewModelProtocol {
+        let work = vacancies[indexPath.row]
+        return DetailViewModel(vacancies: work)
+    }
 }

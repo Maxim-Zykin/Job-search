@@ -42,6 +42,8 @@ class SearchCollectionViewControllerCell: UICollectionViewCell {
     
     var experience = CustomLabel(text: "", size: 14, color: .white, font: .regular)
     
+    var respondButton = CustomButtons(title: "Откликнуться", hasBakground: true, fontSize: .big)
+    
     var viewModel: SearchCollectionCellViewModelProtocol! {
         didSet {
             self.lookingNumber.text = "Сейчас просматривает " + String(viewModel.lookingNumber) + " человек"
@@ -83,6 +85,9 @@ class SearchCollectionViewControllerCell: UICollectionViewCell {
         experienceImage.translatesAutoresizingMaskIntoConstraints = false
         experience.translatesAutoresizingMaskIntoConstraints = false
         
+        respondButton.layer.cornerRadius = 10
+        respondButton.backgroundColor = UIColor(red: 89/255, green: 165/255, blue: 90/255, alpha: 255/255)
+        
         NSLayoutConstraint.activate([
             viewC.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewC.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -118,7 +123,6 @@ class SearchCollectionViewControllerCell: UICollectionViewCell {
             experienceImage.leadingAnchor.constraint(equalTo: experience.leadingAnchor, constant: -20),
             experienceImage.widthAnchor.constraint(equalToConstant: 12),
             experienceImage.heightAnchor.constraint(equalToConstant: 10),
-            
             ])
     }
     

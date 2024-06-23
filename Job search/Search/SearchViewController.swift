@@ -30,6 +30,7 @@ class SearchViewController: UIViewController {
         view.backgroundColor = .black
         setup()
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
     private func makeLayout() -> UICollectionViewLayout {
@@ -70,6 +71,7 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UICollectionViewDataSource {
     
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.numberOfRows()
     }
@@ -80,3 +82,20 @@ extension SearchViewController: UICollectionViewDataSource {
         return cell
     }
 }
+
+extension SearchViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detail = DetailViewController()
+        let work = viewModel.viewModelForSelectedRow(at: indexPath)
+        
+        detail.titleLabel.text = work.title
+        detail.salaryLabel.text = work.salary
+        detail.experienceLabel.text = work.experience
+        detail.typeOfEmployment.text = work.typeOfEmployment
+        detail.addressLabel.text = work.address
+        detail.companyLabel.text = work.company
+    
+    }
+}
+

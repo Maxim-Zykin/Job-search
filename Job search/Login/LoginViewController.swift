@@ -94,16 +94,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailTextField.delegate = self
         setupUI()
         signInEmailButton.addTarget(self, action: #selector(tap), for: .touchUpInside)
-//        emailTextField.addTarget(self, action: #selector(LoginViewController.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true);
         }
-    
-//   final func textFieldDidChange(textField: UITextField) {
-//        //что-то делаете, когда текстовое поле меняет значение
-//    }
     
     func setupUI() {
         view.addSubview(titleLabel)
