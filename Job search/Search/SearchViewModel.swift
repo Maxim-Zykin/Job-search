@@ -17,7 +17,7 @@ protocol SearchViewModelProtocol {
 
 class SearchViewModel: SearchViewModelProtocol {
     
-    private let url = "https://run.mocky.io/v3/c6a5026f-0c42-451d-ad62-a24c6356b4bc"
+    private let url = "https://run.mocky.io/v3/61468d08-12d5-411d-8bdc-30c810506b4e"
     
     var vacancies: [Vacancy] = []
     

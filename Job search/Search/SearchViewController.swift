@@ -95,7 +95,10 @@ extension SearchViewController: UICollectionViewDelegate {
         detail.typeOfEmployment.text = work.typeOfEmployment
         detail.addressLabel.text = work.address
         detail.companyLabel.text = work.company
-    
+        
+       // present(detail, animated: true)
+        navigationController?.pushViewController(detail, animated: true)
+        print("test")
     }
 }
 
